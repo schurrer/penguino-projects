@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-script minSpecVersion="1.000000" authoringTool="com.apple.PackageMaker" authoringToolVersion="3.0.4" authoringToolBuild="179">
+    <title>Penguino AVR support for Arduino Software</title>
+    <options customize="allow" allow-external-scripts="no" rootVolumeOnly="false"/>
+    <volume-check script="pm_volume_check();"/>
+    <script>function pm_volume_check() {
+  if(!(system.files.fileExistsAtPath(my.target.mountpoint + '/Applications/Arduino.app') == true)) {
+    my.result.title = 'Failure';
+    my.result.message = 'This is a patch for Arduino software. Please install Arduino software first from arduino.cc.';
+    my.result.type = 'Fatal';
+    return false;
+  }
+  return true;
+}
+</script>
+    <background file="background" alignment="bottomleft" scaling="none"/>
+    <choices-outline>
+        <line choice="choice0"/>
+        <line choice="choice3"/>
+        <line choice="choice4"/>
+    </choices-outline>
+    <choice id="choice0" title="avrdude">
+        <pkg-ref id="com.icylabs.penguinoAvrSupportForArduinoSoftware.avrdude.pkg"/>
+    </choice>
+    <choice id="choice3" title="penguino">
+        <pkg-ref id="com.icylabs.penguinoAvrSupportForArduinoSoftware.penguino.pkg"/>
+    </choice>
+    <choice id="choice4" title="boards_addition">
+        <pkg-ref id="com.icylabs.penguinoAvrSupportForArduinoSoftware.boards_addition.pkg"/>
+    </choice>
+    <pkg-ref id="com.icylabs.penguinoAvrSupportForArduinoSoftware.avrdude.pkg" installKBytes="40" version="1.0" auth="Root">file:./Contents/Packages/avrdude.pkg</pkg-ref>
+    <pkg-ref id="com.icylabs.penguinoAvrSupportForArduinoSoftware.penguino.pkg" installKBytes="120" version="1.0" auth="Root">file:./Contents/Packages/penguino.pkg</pkg-ref>
+    <pkg-ref id="com.icylabs.penguinoAvrSupportForArduinoSoftware.boards_addition.pkg" installKBytes="4" version="1.0" auth="Root">file:./Contents/Packages/boardsaddition.pkg</pkg-ref>
+</installer-script>

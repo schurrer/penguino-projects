@@ -1,0 +1,20 @@
+##############################################################
+
+penguino.name=Penguino AVR
+
+penguino.upload.protocol=penguino
+penguino.upload.maximum_size=32768
+penguino.upload.speed=57600
+
+penguino.bootloader.low_fuses=0xFF
+penguino.bootloader.high_fuses=0xDA
+penguino.bootloader.extended_fuses=0x05
+penguino.bootloader.path=atmega
+penguino.bootloader.file=ATmegaBOOT_168_atmega328.hex
+penguino.bootloader.unlock_bits=0x3F
+penguino.bootloader.lock_bits=0x0F
+
+penguino.build.mcu=atmega32
+penguino.build.f_cpu=16000000L
+penguino.build.core=penguino
+
