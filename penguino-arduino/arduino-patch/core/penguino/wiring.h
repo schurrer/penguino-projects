@@ -32,6 +32,34 @@
 extern "C"{
 #endif
 
+// Penguino port definitions
+#define PinD2 2
+#define PinD3 3
+#define PinD4 4
+#define PinD5 5
+#define PinD6 6
+#define PinD7 7
+#define PinB0 8
+#define PinB1 9
+#define PinB2 10
+#define PinB3 11
+#define PinB4 12
+#define PinB5 13
+#define PinB6 14
+#define PinB7 15	
+#define PinC0 16
+#define PinC1 17 // C2 = 18, C3 = 19, C4 = 20, C5 = 21
+#define LedGreen 22 // C6 22
+#define LedRed 23 // C7 23
+#define PinA0 24
+#define PinA1 25
+#define PinA2 26
+#define PinA3 27
+#define PinA4 28
+#define PinA5 29
+#define PinA6 30
+#define PinA7 31
+
 #define HIGH 0x1
 #define LOW  0x0
 

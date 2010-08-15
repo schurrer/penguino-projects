@@ -106,43 +106,43 @@ const uint8_t PROGMEM port_to_input_PGM[] = {
 
 const uint8_t PROGMEM digital_pin_to_port_PGM[] = {
 	PD, /* 0 */
-	PD,
-	PD,
-	PD,
-	PD,
-	PD,
-	PD,
-	PD,
+	PD, /* 1 */
+	PD, /* 2 */
+	PD, /* 3 */
+	PD, /* 4 */
+	PD, /* 5 */
+	PD, /* 6 */
+	PD, /* 7 */
 	PB, /* 8 */
-	PB,
-	PB,
-	PB,
-	PB,
-	PB,
+	PB, /* 9 */
+	PB, /* 10 */
+	PB, /* 11 */
+	PB, /* 12 */
+	PB, /* 13 */
 /* ATMega32/324P/644 mod provided by AndreS at robotcraft.ca - START */
 #if defined(__AVR_ATmega32__) || defined(__AVR_ATmega324P__) || defined(__AVR_ATmega644__)
-	PB,
-	PB,
+	PB, /* 14 */
+	PB, /* 15 */
 /* ATMega32/324P/644 mod provided by AndreS at robotcraft.ca - END */
 #endif
-	PC, /* 14 */
-	PC,
-	PC,
-	PC,
-	PC,
-	PC,
+	PC, /* 16 */
+	PC, /* 17 */
+	PC, /* 18 */
+	PC, /* 19 */
+	PC, /* 20 */
+	PC, /* 21 */
 /* ATMega32/324P/644 mod provided by AndreS at robotcraft.ca - START */
 #if defined(__AVR_ATmega32__) || defined(__AVR_ATmega324P__) || defined(__AVR_ATmega644__)
-   	PC,
-	PC,
-	PA,         /* 22*/
-	PA,
-	PA,
-	PA,
-	PA,
-	PA,
-	PA,
-	PA,
+   PC, /* 22 */
+	PC, /* 23 */
+	PA, /* 24 */
+	PA, /* 25 */
+	PA, /* 26 */
+	PA, /* 27 */
+	PA, /* 28 */
+	PA, /* 29 */
+	PA, /* 30 */
+	PA, /* 31 */
 /* ATMega32/324P/644 mod provided by AndreS at robotcraft.ca - END */
 #endif 
 };

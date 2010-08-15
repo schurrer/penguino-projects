@@ -27,37 +27,6 @@
 
 #include <avr/pgmspace.h>
 
-// Penguino port definitions
-extern enum {
-	A0 = 22,
-	A1 = 23,
-	A2 = 24,
-	A3 = 25,
-	A4 = 26,
-	A5 = 27,
-	A6 = 28,
-	A7 = 29,
-	
-	B0 = 8,
-	B1 = 9,
-	B2 = 10,
-	B3 = 11,
-	B4 = 12,
-	B5 = 13,
-	B6 = 14,
-	B7 = 15,
-	
-	C0 = 16,
-	C1 = 17,
-	
-	D2 = 0,
-	D3 = 1,
-	D4 = 2,
-	D5 = 3,
-	D6 = 4,
-	D7 = 5
-}
-
 #define NOT_A_PIN 0
 #define NOT_A_PORT 0
 
