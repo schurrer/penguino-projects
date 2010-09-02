@@ -1,0 +1,6 @@
+TOP
+  TCS3414CS
+ NC      SYNC
+SDA  []  SCL
+INT      GND
+GND [][] VCC
